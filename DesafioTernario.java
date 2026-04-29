@@ -11,7 +11,8 @@ public class DesafioTernario {
 		System.out.println("Informe o ano:");
 		ano = ler.nextInt();
 
-		System.out.println(ano % 4 == 0 || ano % 400 == 0 && ano % 100 != 0 ? "O ano é bissexto" : "O ano não é bissexto");
+		System.out.println((ano % 4 == 0 && ano % 100 != 0) 
+				|| ano % 400 == 0 ? "O ano é bissexto" : "O ano não é bissexto");
 
 		ler.close();
 
